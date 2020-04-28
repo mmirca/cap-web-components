@@ -24,6 +24,20 @@ Start a local development server on port `4200`.
 npm start
 ```
 
+### `test`
+Run all unit tests and generate the coverage report. Unit tests are powered by Jest, for more information about how to implement them you can check their [docs](https://jestjs.io/docs/en/getting-started).
+
+```bash
+npm test
+```
+
+### `test:watch`
+Start an inmersive unit test developer experience, it allows you to focus on a specific set of tests and listens for changes on the files to run them again.
+
+```bash
+npm test:watch
+```
+
 ### `build`
 Generate the vulcanized bundles in the `dist` folder. This command will generate a **esm** bundle to be used in modern browser that [support modules](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/M%C3%B3dulos) and a **umd** bundle for browser that don't.
 
