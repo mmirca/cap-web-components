@@ -10,8 +10,8 @@ This plugin requires an [LTS](https://github.com/nodejs/Release) Node version (v
 Clone the project and install the dependencies:
 
 ```bash
-git clone https://github.com/cap-web-components/mapfre-login.git
-cd mapfre-login
+git clone git@github.com:cap-web-components/cap-web-components.git
+cd cap-web-components
 npm i
 ```
 

@@ -1,7 +1,7 @@
 {
-  "name": "awesome-panel",
-  "version": "1.0.0",
-  "description": "An example of lit-element setup that works on IE11",
+  "name": "cap-web-components",
+  "version": "1.0.1",
+  "description": "Archetype to build web components with legacy browser support",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
@@ -22,7 +22,7 @@
   "devDependencies": {
     "@types/jest": "^25.2.1",
     "babel-jest": "^25.4.0",
-    "cap-rollup-config": "^1.1.0",
+    "cap-rollup-config": "^1.1.1",
     "jest": "^25.4.0",
     "jest-environment-jsdom-sixteen": "^1.0.3",
     "rollup": "^1.25.2"
