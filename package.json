@@ -9,7 +9,8 @@
     "test": "jest --coverage",
     "test:watch": "jest --watch",
     "demo": "start-storybook -s ./src --ci",
-    "demo:build": "build-storybook -s ./src -o catalog"
+    "demo:build": "build-storybook -s ./src -o catalog",
+    "postinstall": "link-module-alias"
   },
   "keywords": [
     "webcomponents",
@@ -30,6 +31,11 @@
     "cap-rollup-config": "^1.1.1",
     "jest": "^25.4.0",
     "jest-environment-jsdom-sixteen": "^1.0.3",
+    "link-module-alias": "^1.2.0",
     "rollup": "^1.25.2"
+  },
+  "_moduleAliases": {
+    "~root": ".",
+    "~core": "core"
   }
 }
