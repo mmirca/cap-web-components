@@ -7,7 +7,9 @@
     "build": "rollup -c",
     "start": "rollup -c --watch",
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "demo": "start-storybook -s ./src --ci",
+    "demo:build": "build-storybook -s ./src -o catalog"
   },
   "keywords": [
     "webcomponents",
@@ -20,8 +22,11 @@
     "rollup-plugin-livereload": "^1.2.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@storybook/html": "^5.3.19",
     "@types/jest": "^25.2.1",
     "babel-jest": "^25.4.0",
+    "babel-loader": "^8.1.0",
     "cap-rollup-config": "^1.1.1",
     "jest": "^25.4.0",
     "jest-environment-jsdom-sixteen": "^1.0.3",
