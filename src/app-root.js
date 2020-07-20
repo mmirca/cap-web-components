@@ -1,12 +1,18 @@
 import { LitElement, html } from 'lit-element';
 import { defineCustomElement } from '~core/utils';
+import Variables from '~shared/variables';
+import Styles from '~shared/styles';
 import AppRootStyles from './app-root.styles';
 import './components/app-events';
 
 export class AppRoot extends LitElement {
 
   static get styles() {
-    return AppRootStyles;
+    return [
+      Variables,
+      Styles,
+      AppRootStyles
+    ];
   }
 
   static get properties() {
@@ -24,7 +30,7 @@ export class AppRoot extends LitElement {
     };
     return html`
       <img src="assets/cap-cli.svg">
-      <h1>Welcome to cap-cli!</h1>
+      <h1 class="h2">Welcome to cap-cli!</h1>
       ${ router[this.page] || router.default }
     `;
   }
@@ -32,7 +38,7 @@ export class AppRoot extends LitElement {
   _getDefaultTemplate() {
     return html`
       <p>
-        We are in \u{1F499} with Web Components and think they are the future of the web.
+        We are in \u{1F499}  with Web Components and think they are the future of the web.
         We created cap-cli so you can start using them anywhere, even in legacy apps.
       </p>
       <p>

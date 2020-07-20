@@ -37,6 +37,7 @@
   },
   "_moduleAliases": {
     "~root": ".",
-    "~core": "core"
+    "~core": "./core",
+    "~shared": "./shared"
   }
 }

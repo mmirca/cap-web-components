@@ -1,11 +1,17 @@
 import { LitElement, html } from 'lit-element';
 import { defineCustomElement, dispatchCustomEvent } from '~core/utils';
+import Variables from '~shared/variables';
+import Styles from '~shared/styles';
 import AppEventsStyles from './app-events.styles';
 
 export class AppEvents extends LitElement {
 
   static get styles() {
-    return AppEventsStyles;
+    return [
+      Variables,
+      Styles,
+      AppEventsStyles
+    ];
   }
   
   render() {
