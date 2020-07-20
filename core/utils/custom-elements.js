@@ -4,8 +4,8 @@
  * @param {String} name 
  * @param {Object} constructor 
  */
-export function defineCustomElement(name, constructor) {
-  if (!customElements.get(name)) {
-    customElements.define(name, constructor);
+export function defineCustomElement(name, constructor, registry = customElements) {
+  if (!registry.get(name)) {
+    registry.define(name, constructor);
   }
 }

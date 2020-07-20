@@ -4,6 +4,9 @@ module.exports = {
   ],
   testEnvironment: 'jest-environment-jsdom-sixteen',
   coveragePathIgnorePatterns: [
-    'styles.js$'
+    'styles.js$',
+    'shared/variables.js',
+    'shared/styles.js',
+    'index.js'
   ]
 };
