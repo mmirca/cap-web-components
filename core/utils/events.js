@@ -3,9 +3,9 @@
  * from the provided element as context
  * @param {String} name 
  * @param {*} payload 
- * @param {Object} context Element that should emit the event, defaults to `window`
+ * @param {Object} context Element that should emit the event, defaults to `document`
  */
-export function dispatchCustomEvent(name, payload, context = window) {
+export function dispatchCustomEvent(name, payload, context = document) {
   context.dispatchEvent(new CustomEvent(name, {
     composed: true,
     bubbles: true,

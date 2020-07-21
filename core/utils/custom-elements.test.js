@@ -10,7 +10,11 @@ describe('custom-elements', () => {
         define: jest.fn()
       };
       const customElementConstructor = class {};
-      defineCustomElement('new-tag', customElementConstructor, customElements);
+      defineCustomElement.call(
+        { customElements },
+        'new-tag',
+        customElementConstructor
+      );
       expect(customElements.define).toBeCalledWith('new-tag', customElementConstructor);
     });
 
@@ -20,7 +24,11 @@ describe('custom-elements', () => {
         define: jest.fn()
       };
       const customElementConstructor = class {};
-      defineCustomElement('new-tag', customElementConstructor, customElements);
+      defineCustomElement.call(
+        { customElements },
+        'new-tag',
+        customElementConstructor
+      );
       expect(customElements.define).not.toBeCalled();
     });
 

@@ -16,7 +16,7 @@ describe('events', () => {
     });
 
     test('should call the document\'s dispatchEvent method with a new custom event when called without context', () => {
-      const documentSpy = jest.spyOn(window, 'dispatchEvent');
+      const documentSpy = jest.spyOn(document, 'dispatchEvent');
       const payload = Symbol();
       dispatchCustomEvent('custom-event', payload);
       const customEvent = documentSpy.mock.calls[0][0];
