@@ -46,3 +46,18 @@ npm run build
 ```
 
 This script generates an `index.html` file that includes all the bundles. You can use it as a reference to extract the bundles for other projects.
+
+### `demo`
+Start a [storybook](https://storybook.js.org/) demo server. By default it will add all files ending in `.stories.js` or `stories.ts` to the catalog.
+
+```bash
+npm run demo
+```
+
+### `demo:build`
+
+Generate the static files that contain the catalog with all the demo cases. By default the output will be generated in a `catalog` folder.
+
+```bash
+npm run demo:build
+```
